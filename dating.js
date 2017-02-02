@@ -13,18 +13,15 @@ var updatePreviewhtml = function () {
   var email = emailInput.value
   var phone = phoneInput.value
   var about = aboutInput.value
-  htmlPreview.innerHTML =
+  var profileInfo =
     '<h1>Hi,my name is ' + firstname + ' ' + lastname + '!</h1>' +
     '<p>' + about + '</p>' +
     '<p>If you\'re interested in a date, you can email me at ' +
     '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
-    ' or give me call at ' + phone + '</p>'
-  rawhtmlPreview.textContent =
-    '<h1>Hi,my name is ' + firstname + ' ' + lastname + '!</h1>' +
-    '<p>' + about + '</p>' +
-    '<p>If you\'re interested in a date, you can email me at ' +
-    '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
-    ' or give me call at ' + phone + '</p>'
+    ' or give me call at ' + '<a href="PHONE_NUMBER:' + phone +
+    '" target="_blank">' + phone + '</a>' + '</p>'
+  htmlPreview.innerHTML = profileInfo
+  rawhtmlPreview.textContent = profileInfo
 }
 
 /* Event Listeners */
