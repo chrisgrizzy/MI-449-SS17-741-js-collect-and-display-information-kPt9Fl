@@ -18,7 +18,7 @@ var updatePreviewhtml = function () {
     '<p>' + about + '</p>' +
     '<p>If you\'re interested in a date, you can email me at ' +
     '<a href="mailto:' + email + '" target="_blank">' + email + '</a>' +
-    ' or give me call at ' + '<a href="PHONE_NUMBER:' + phone +
+    ' or give me call at ' + '<a href="tel:' + phone +
     '" target="_blank">' + phone + '</a>' + '</p>'
   htmlPreview.innerHTML = profileInfo
   rawhtmlPreview.textContent = profileInfo
